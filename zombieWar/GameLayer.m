@@ -79,8 +79,10 @@
         } @finally {
             /* No need to do anything */
         }
-        
+#if 0
+        [[SimpleAudioEngine sharedEngine] setBackgroundMusicVolume:2.0f];
         [[SimpleAudioEngine sharedEngine] playBackgroundMusic:@"hell.wav"];
+#endif
     }
 }
 
@@ -269,6 +271,7 @@
      [CCSequence actions:
       [CCMoveTo actionWithDuration:realMoveDuration position:realDest],
       [CCCallBlockN actionWithBlock:^(CCNode *node) {
+         [[SimpleAudioEngine sharedEngine] playEffect:@"Bomb_Exploding.wav"];
          [node removeFromParentAndCleanup:YES];
      }],
       nil]];
@@ -334,8 +337,8 @@
             
             if (monstersToDelete.count > 0) {
                 [projectilesToDelete addObject:projectile];
-            }
-            
+                [[SimpleAudioEngine sharedEngine]playEffect:@"Zombie_In_Pain.wav"];
+            }            
             [monstersToDelete removeAllObjects];
             //NSLog(@"monstersToDelete removeAllObjects");
         }

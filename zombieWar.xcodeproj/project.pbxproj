@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0C9FBC18415BD20028A16C /* Bomb_Exploding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C9FBB18415BD20028A16C /* Bomb_Exploding.wav */; };
+		4A0C9FBE184162250028A16C /* Zombie_In_Pain.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C9FBD184162250028A16C /* Zombie_In_Pain.wav */; };
 		4ACF0F0118413302002FC79C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0018413302002FC79C /* QuartzCore.framework */; };
 		4ACF0F0318413302002FC79C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0218413302002FC79C /* OpenGLES.framework */; };
 		4ACF0F0518413302002FC79C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0418413302002FC79C /* OpenAL.framework */; };
@@ -159,6 +161,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A0C9FBB18415BD20028A16C /* Bomb_Exploding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bomb_Exploding.wav; sourceTree = "<group>"; };
+		4A0C9FBD184162250028A16C /* Zombie_In_Pain.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Zombie_In_Pain.wav; sourceTree = "<group>"; };
 		4ACF0EFD18413302002FC79C /* zombieWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zombieWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACF0F0018413302002FC79C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4ACF0F0218413302002FC79C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -552,6 +556,8 @@
 				4AD5F8A11841348500EAD965 /* projectile.png */,
 				4AD5F8A71841348500EAD965 /* zombie_pixel.png */,
 				4AD5F8A81841348500EAD965 /* hell.wav */,
+				4A0C9FBD184162250028A16C /* Zombie_In_Pain.wav */,
+				4A0C9FBB18415BD20028A16C /* Bomb_Exploding.wav */,
 				4ACF0F1618413302002FC79C /* Default.png */,
 				4ACF0F1818413302002FC79C /* Default@2x.png */,
 				4ACF0F1A18413302002FC79C /* Default-568h@2x.png */,
@@ -989,12 +995,14 @@
 				4ACF0F1F18413302002FC79C /* Icon-72.png in Resources */,
 				4AD5F8B31841348600EAD965 /* projectile.png in Resources */,
 				4AD5F8AC1841348600EAD965 /* projectile2.png in Resources */,
+				4A0C9FBC18415BD20028A16C /* Bomb_Exploding.wav in Resources */,
 				4ACF0F1718413302002FC79C /* Default.png in Resources */,
 				4AD5F8AF1841348600EAD965 /* monster.png in Resources */,
 				4AD5F8AB1841348600EAD965 /* projectile2-hd.png in Resources */,
 				4AD5F8BA1841348600EAD965 /* hell.wav in Resources */,
 				4ACF0F2118413302002FC79C /* Icon-Small-50.png in Resources */,
 				4AD5F8AA1841348600EAD965 /* player2.png in Resources */,
+				4A0C9FBE184162250028A16C /* Zombie_In_Pain.wav in Resources */,
 				4ACF0F2C18413302002FC79C /* iTunesArtwork in Resources */,
 				4AD5F8A91841348600EAD965 /* player2-hd.png in Resources */,
 				4AD5F8AE1841348600EAD965 /* monster-hd.png in Resources */,
