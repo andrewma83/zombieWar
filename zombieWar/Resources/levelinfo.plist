@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>levelinfo</key>
+	<array>
+		<dict>
+			<key>num_of_monster</key>
+			<integer>10</integer>
+			<key>speed</key>
+			<integer>30</integer>
+		</dict>
+		<dict>
+			<key>num_of_monster</key>
+			<integer>20</integer>
+			<key>speed</key>
+			<integer>20</integer>
+		</dict>
+		<dict>
+			<key>num_of_monster</key>
+			<integer>30</integer>
+			<key>speed</key>
+			<integer>10</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

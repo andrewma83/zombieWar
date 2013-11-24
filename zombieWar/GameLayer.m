@@ -39,12 +39,22 @@
 // on "init" you need to initialize your instance
 -(id) init
 {
-    // always call "super" init
-    // Apple recommends to re-assign "self" with the "super's" return value
-    level = 1;
-    if( (self=[super initWithColor:ccc4(255,255,255,255)]) ) {
-        gamestate = NO_STATE;
-        [self startGame];
+    NSString *filepath;
+    
+    @try {
+        // always call "super" init
+        // Apple recommends to re-assign "self" with the "super's" return value
+        level = 0;
+        filepath = [[NSBundle mainBundle] pathForResource:@"levelinfo" ofType:@"plist"];
+        if( (self=[super initWithColor:ccc4(255,255,255,255)]) ) {
+            gamestate = NO_STATE;
+            levelDict = [[NSDictionary alloc] initWithContentsOfFile:filepath];
+            [[SimpleAudioEngine sharedEngine] preloadEffect:@"Zombie_In_Pain.wav"];
+            [[SimpleAudioEngine sharedEngine] preloadEffect:@"Bomb_Exploding.wav"];
+            [self startGame];
+        }
+    } @catch (NSException *e){
+        NSLog(@"catch an exception %@", e);
     }
     
     return self;
@@ -53,13 +63,17 @@
 -(void) startGame
 {
     CGSize winsize;
+    NSArray *levelInfo = [levelDict valueForKey:@"levelinfo"];
+    NSDictionary *infoDict = levelInfo[level];
+    NSNumber *num_of_monster = [infoDict valueForKey:@"num_of_monster"];
+    
     
     if (gamestate != GAMEPLAY) {
         @try {
             [self cleanupLabelScreen];
             [self cleanupGameData];
             _stopMonster = NO;
-            monsterCount = level;
+            monsterCount = [num_of_monster intValue];
             [[CCDirector sharedDirector] setDisplayStats:NO];
             winsize = [CCDirector sharedDirector].winSize;
             _player = [[Player alloc] init];
@@ -123,6 +137,52 @@
     [_projectiles removeAllObjects];
 }
 
+-(void) endGameScreen
+{
+    CGSize size;
+    CCMenuItem *itemRestart;
+    NSString *endGameString;
+    
+    if (gamestate == GAMEPLAY) {
+        [self cleanupGameScreen];
+        // Change background color
+        [self setColor:ccc3(0,0,0)];
+        
+        // create and initialize a Label
+        endGameString = [NSString stringWithFormat:@"Congradulation you have completed this game"];
+        _label = [CCLabelTTF labelWithString:endGameString fontName:@"Marker Felt" fontSize:24];
+        _label.color = ccc3(255,0,0);
+        
+        // ask director for the window size
+        size = [[CCDirector sharedDirector] winSize];
+        
+        // position the label on the center of the screen
+        _label.position =  ccp( size.width /2 , size.height/2 + 20 );
+        // add the label as a child to this Layer
+        [self addChild: _label];
+        
+        // Restart Menu Item using blocks
+        itemRestart = [CCMenuItemFont itemWithString:@"Restart" block:^(id sender) {
+            /* Reset level back to zero */
+            level = 0;
+            [self startGame];
+        }];
+        
+        
+        _menu = [CCMenu menuWithItems:itemRestart, nil];
+        [_menu alignItemsHorizontallyWithPadding:20];
+        [_menu setPosition:ccp( size.width/2, size.height/2 - 30)];
+        
+        // Add the menu to the layer
+        [self addChild:_menu];
+        
+        // Change background color
+        [self setColor:ccc3(0,0,0)];
+        gamestate = LEVELUP;
+    }
+
+}
+
 -(void) levelupScreen
 {
     CGSize size;
@@ -135,7 +195,8 @@
         [self setColor:ccc3(0,0,0)];
         
         // create and initialize a Label
-        levelString = [NSString stringWithFormat:@"Level up to %d", ++level];
+        level++;
+        levelString = [NSString stringWithFormat:@"Level up to %d", (level + 1)];
         _label = [CCLabelTTF labelWithString:levelString fontName:@"Marker Felt" fontSize:64];
         _label.color = ccc3(255,0,0);
         
@@ -319,7 +380,11 @@
     monstersToDelete = [[NSMutableArray alloc] init];
     
     if ([_monsters count] == 0 && monsterCount == 0) {
-        [self levelupScreen];
+        if (level < MAXLEVEL) {
+            [self levelupScreen];
+        } else {
+            [self endGameScreen];
+        }
     } else {
         for (CCSprite *projectile in _projectiles) {
             /* Check if any monster intersect with any projectile */
@@ -338,7 +403,7 @@
             if (monstersToDelete.count > 0) {
                 [projectilesToDelete addObject:projectile];
                 [[SimpleAudioEngine sharedEngine]playEffect:@"Zombie_In_Pain.wav"];
-            }            
+            }
             [monstersToDelete removeAllObjects];
             //NSLog(@"monstersToDelete removeAllObjects");
         }
@@ -359,21 +424,25 @@
     int maxY;
     int rangeY;
     int actualY;
-    int minDuration = 10.0;
-    int maxDuration = 30.0;
+    int minDuration = 2.0;
+    int maxDuration;
     int rangeDuration;
     int actualDuration;
     CCMoveTo *actionMove;
     CCCallBlockN *actionMoveDone;
+    NSArray *levelInfo = [levelDict valueForKey:@"levelinfo"];
+    NSDictionary *infoDict = levelInfo[level];
+    NSNumber *speed = [infoDict valueForKey:@"speed"];
     
     @try {
+        maxDuration = [speed intValue];
         monster = [[Monster alloc] init];
         winsize = [CCDirector sharedDirector].winSize;
         minY = monster.contentSize.height + 20;
         maxY = winsize.height;
         rangeY = maxY - minY;
         actualY = (arc4random() % rangeY);
-        rangeDuration = (maxDuration - minDuration) / level;
+        rangeDuration = maxDuration - minDuration;
         
         monster.position = ccp(winsize.width - monster.contentSize.width / 2, actualY);
         monster.tag = 1;

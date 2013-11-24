@@ -13,6 +13,7 @@
 #import "cocos2d.h"
 #import "Monster.h"
 #import "Player.h"
+#define MAXLEVEL    2
 
 typedef enum {GAMEPLAY=0, GAMEOVER, LEVELUP, NO_STATE} STATE_T;
 // GameLayer
@@ -29,6 +30,7 @@ typedef enum {GAMEPLAY=0, GAMEOVER, LEVELUP, NO_STATE} STATE_T;
     int level;
     int monsterCount;
     STATE_T gamestate;
+    NSDictionary *levelDict;
 }
 
 // returns a CCScene that contains the HelloWorldLayer as the only child
