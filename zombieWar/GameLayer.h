@@ -22,6 +22,7 @@ typedef enum {GAMEPLAY=0, GAMEOVER, LEVELUP, NO_STATE} STATE_T;
     NSMutableArray * _monsters;
     NSMutableArray * _projectiles;
     CCSprite *_nextProjectile;
+    CCSprite *background;
     Player *_player;
     CCMenu *_menu;
     CCLabelTTF *_label;

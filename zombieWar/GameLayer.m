@@ -74,8 +74,14 @@
             [self cleanupGameData];
             _stopMonster = NO;
             monsterCount = [num_of_monster intValue];
+            
             [[CCDirector sharedDirector] setDisplayStats:NO];
             winsize = [CCDirector sharedDirector].winSize;
+            
+            background = [CCSprite spriteWithFile:@"background.png"];
+            background.position = ccp(winsize.width/2, winsize.height/2);
+            [self addChild:background];
+
             _player = [[Player alloc] init];
             _player.position = ccp(_player.contentSize.width/2, winsize.height/2);
             
@@ -135,6 +141,8 @@
         [self removeChild:projectile cleanup:YES];
     }
     [_projectiles removeAllObjects];
+    
+    [self removeChild:background cleanup:YES];
 }
 
 -(void) endGameScreen
