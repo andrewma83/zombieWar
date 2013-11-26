@@ -350,10 +350,12 @@
 
 - (void) ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if (_nextProjectile == nil && _player != nil) {
-        [self gamePlayHandle:touches];
-    } else {
-        NSLog(@"_nextProjectile is not nil");
+    if (gamestate == GAMEPLAY) {
+        if (_nextProjectile == nil && _player != nil) {
+            [self gamePlayHandle:touches];
+        } else {
+            NSLog(@"_nextProjectile is not nil");
+        }
     }
 }
 
