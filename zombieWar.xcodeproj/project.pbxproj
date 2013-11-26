@@ -12,6 +12,7 @@
 		4A0C9FC0184173880028A16C /* levelinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C9FBF184173880028A16C /* levelinfo.plist */; };
 		4A1943231843CA4400850D97 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1943221843CA4400850D97 /* background.png */; };
 		4A1943251843CA9900850D97 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1943241843CA9900850D97 /* character.png */; };
+		4A8B49691845159C00E152CD /* tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B49681845159C00E152CD /* tank.png */; };
 		4ACF0F0118413302002FC79C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0018413302002FC79C /* QuartzCore.framework */; };
 		4ACF0F0318413302002FC79C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0218413302002FC79C /* OpenGLES.framework */; };
 		4ACF0F0518413302002FC79C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0418413302002FC79C /* OpenAL.framework */; };
@@ -169,6 +170,7 @@
 		4A0C9FBF184173880028A16C /* levelinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = levelinfo.plist; path = Resources/levelinfo.plist; sourceTree = "<group>"; };
 		4A1943221843CA4400850D97 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		4A1943241843CA9900850D97 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
+		4A8B49681845159C00E152CD /* tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tank.png; sourceTree = "<group>"; };
 		4ACF0EFD18413302002FC79C /* zombieWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zombieWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACF0F0018413302002FC79C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4ACF0F0218413302002FC79C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -553,6 +555,7 @@
 				4A1943241843CA9900850D97 /* character.png */,
 				4AD5F8971841348500EAD965 /* player2-hd.png */,
 				4AD5F8981841348500EAD965 /* player2.png */,
+				4A8B49681845159C00E152CD /* tank.png */,
 				4AD5F8991841348500EAD965 /* projectile2-hd.png */,
 				4AD5F89A1841348500EAD965 /* projectile2.png */,
 				4AD5F89C1841348500EAD965 /* monster-hd.png */,
@@ -1007,6 +1010,7 @@
 				4AD5F8AC1841348600EAD965 /* projectile2.png in Resources */,
 				4A1943231843CA4400850D97 /* background.png in Resources */,
 				4A0C9FBC18415BD20028A16C /* Bomb_Exploding.wav in Resources */,
+				4A8B49691845159C00E152CD /* tank.png in Resources */,
 				4ACF0F1718413302002FC79C /* Default.png in Resources */,
 				4AD5F8AF1841348600EAD965 /* monster.png in Resources */,
 				4AD5F8AB1841348600EAD965 /* projectile2-hd.png in Resources */,

@@ -11,7 +11,7 @@
 @implementation Player
 - (Player *) init
 {
-    self = [Player spriteWithFile:@"character.png"];
+    self = [Player spriteWithFile:@"tank.png"];
     self.maxHit = 5;
     
     return self;
