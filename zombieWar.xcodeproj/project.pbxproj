@@ -12,6 +12,11 @@
 		4A0C9FC0184173880028A16C /* levelinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C9FBF184173880028A16C /* levelinfo.plist */; };
 		4A1943231843CA4400850D97 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1943221843CA4400850D97 /* background.png */; };
 		4A1943251843CA9900850D97 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1943241843CA9900850D97 /* character.png */; };
+		4A87624E184953D7007CE977 /* zombie_splash@640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A87624D184953D7007CE977 /* zombie_splash@640x1136.png */; };
+		4A8762501849546E007CE977 /* zombie_splash@640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A87624F1849546E007CE977 /* zombie_splash@640x960.png */; };
+		4A876252184954E5007CE977 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A876251184954E5007CE977 /* Default.png */; };
+		4A87625418495552007CE977 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A87625318495552007CE977 /* Default~iphone.png */; };
+		4A876256184955D1007CE977 /* Default@320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A876255184955D1007CE977 /* Default@320x480.png */; };
 		4A8B49691845159C00E152CD /* tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B49681845159C00E152CD /* tank.png */; };
 		4ACF0F0118413302002FC79C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0018413302002FC79C /* QuartzCore.framework */; };
 		4ACF0F0318413302002FC79C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0218413302002FC79C /* OpenGLES.framework */; };
@@ -170,6 +175,11 @@
 		4A0C9FBF184173880028A16C /* levelinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = levelinfo.plist; path = Resources/levelinfo.plist; sourceTree = "<group>"; };
 		4A1943221843CA4400850D97 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		4A1943241843CA9900850D97 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
+		4A87624D184953D7007CE977 /* zombie_splash@640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie_splash@640x1136.png"; sourceTree = "<group>"; };
+		4A87624F1849546E007CE977 /* zombie_splash@640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie_splash@640x960.png"; sourceTree = "<group>"; };
+		4A876251184954E5007CE977 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4A87625318495552007CE977 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		4A876255184955D1007CE977 /* Default@320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@320x480.png"; sourceTree = "<group>"; };
 		4A8B49681845159C00E152CD /* tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tank.png; sourceTree = "<group>"; };
 		4ACF0EFD18413302002FC79C /* zombieWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zombieWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACF0F0018413302002FC79C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -576,6 +586,11 @@
 				4ACF0F2618413302002FC79C /* Icon.png */,
 				4ACF0F2818413302002FC79C /* Icon@2x.png */,
 				4A1943221843CA4400850D97 /* background.png */,
+				4A876255184955D1007CE977 /* Default@320x480.png */,
+				4A876251184954E5007CE977 /* Default.png */,
+				4A87625318495552007CE977 /* Default~iphone.png */,
+				4A87624F1849546E007CE977 /* zombie_splash@640x960.png */,
+				4A87624D184953D7007CE977 /* zombie_splash@640x1136.png */,
 				4AD5F8A81841348500EAD965 /* hell.wav */,
 				4A0C9FBD184162250028A16C /* Zombie_In_Pain.wav */,
 				4A0C9FBB18415BD20028A16C /* Bomb_Exploding.wav */,
@@ -1005,14 +1020,19 @@
 				4ACF0F2318413302002FC79C /* Icon-Small.png in Resources */,
 				4AD5F8B21841348600EAD965 /* projectile-hd.png in Resources */,
 				4A0C9FC0184173880028A16C /* levelinfo.plist in Resources */,
+				4A87624E184953D7007CE977 /* zombie_splash@640x1136.png in Resources */,
 				4ACF0F1F18413302002FC79C /* Icon-72.png in Resources */,
 				4AD5F8B31841348600EAD965 /* projectile.png in Resources */,
 				4AD5F8AC1841348600EAD965 /* projectile2.png in Resources */,
 				4A1943231843CA4400850D97 /* background.png in Resources */,
 				4A0C9FBC18415BD20028A16C /* Bomb_Exploding.wav in Resources */,
 				4A8B49691845159C00E152CD /* tank.png in Resources */,
+				4A8762501849546E007CE977 /* zombie_splash@640x960.png in Resources */,
 				4ACF0F1718413302002FC79C /* Default.png in Resources */,
+				4A876256184955D1007CE977 /* Default@320x480.png in Resources */,
+				4A876252184954E5007CE977 /* Default.png in Resources */,
 				4AD5F8AF1841348600EAD965 /* monster.png in Resources */,
+				4A87625418495552007CE977 /* Default~iphone.png in Resources */,
 				4AD5F8AB1841348600EAD965 /* projectile2-hd.png in Resources */,
 				4AD5F8BA1841348600EAD965 /* hell.wav in Resources */,
 				4ACF0F2118413302002FC79C /* Icon-Small-50.png in Resources */,
