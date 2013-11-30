@@ -12,11 +12,15 @@
 		4A0C9FC0184173880028A16C /* levelinfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A0C9FBF184173880028A16C /* levelinfo.plist */; };
 		4A1943231843CA4400850D97 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1943221843CA4400850D97 /* background.png */; };
 		4A1943251843CA9900850D97 /* character.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A1943241843CA9900850D97 /* character.png */; };
+		4A319E26184A69C3006D80D4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A319E25184A69C3006D80D4 /* Default@2x.png */; };
+		4A319E29184A6A14006D80D4 /* zombie_splash_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A319E27184A6A14006D80D4 /* zombie_splash_screen.png */; };
+		4A319E2A184A6A14006D80D4 /* zombie_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A319E28184A6A14006D80D4 /* zombie_splash.png */; };
+		4A319E2D184A7C60006D80D4 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A319E2B184A7C60006D80D4 /* Icon-80.png */; };
+		4A319E2E184A7C60006D80D4 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A319E2C184A7C60006D80D4 /* Icon-120.png */; };
 		4A87624E184953D7007CE977 /* zombie_splash@640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A87624D184953D7007CE977 /* zombie_splash@640x1136.png */; };
 		4A8762501849546E007CE977 /* zombie_splash@640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A87624F1849546E007CE977 /* zombie_splash@640x960.png */; };
 		4A876252184954E5007CE977 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A876251184954E5007CE977 /* Default.png */; };
 		4A87625418495552007CE977 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A87625318495552007CE977 /* Default~iphone.png */; };
-		4A876256184955D1007CE977 /* Default@320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A876255184955D1007CE977 /* Default@320x480.png */; };
 		4A8B49691845159C00E152CD /* tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A8B49681845159C00E152CD /* tank.png */; };
 		4ACF0F0118413302002FC79C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0018413302002FC79C /* QuartzCore.framework */; };
 		4ACF0F0318413302002FC79C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0218413302002FC79C /* OpenGLES.framework */; };
@@ -28,10 +32,6 @@
 		4ACF0F0F18413302002FC79C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F0E18413302002FC79C /* CoreGraphics.framework */; };
 		4ACF0F1118413302002FC79C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F1018413302002FC79C /* CoreText.framework */; };
 		4ACF0F1318413302002FC79C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACF0F1218413302002FC79C /* GameKit.framework */; };
-		4ACF0F1718413302002FC79C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF0F1618413302002FC79C /* Default.png */; };
-		4ACF0F1918413302002FC79C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF0F1818413302002FC79C /* Default@2x.png */; };
-		4ACF0F1B18413302002FC79C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF0F1A18413302002FC79C /* Default-568h@2x.png */; };
-		4ACF0F1D18413302002FC79C /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF0F1C18413302002FC79C /* Default-Landscape~ipad.png */; };
 		4ACF0F1F18413302002FC79C /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF0F1E18413302002FC79C /* Icon-72.png */; };
 		4ACF0F2118413302002FC79C /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF0F2018413302002FC79C /* Icon-Small-50.png */; };
 		4ACF0F2318413302002FC79C /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACF0F2218413302002FC79C /* Icon-Small.png */; };
@@ -175,11 +175,15 @@
 		4A0C9FBF184173880028A16C /* levelinfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = levelinfo.plist; path = Resources/levelinfo.plist; sourceTree = "<group>"; };
 		4A1943221843CA4400850D97 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		4A1943241843CA9900850D97 /* character.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = character.png; sourceTree = "<group>"; };
+		4A319E25184A69C3006D80D4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4A319E27184A6A14006D80D4 /* zombie_splash_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie_splash_screen.png; sourceTree = "<group>"; };
+		4A319E28184A6A14006D80D4 /* zombie_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zombie_splash.png; sourceTree = "<group>"; };
+		4A319E2B184A7C60006D80D4 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-80.png"; path = "Resources/Icon-80.png"; sourceTree = "<group>"; };
+		4A319E2C184A7C60006D80D4 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "Resources/Icon-120.png"; sourceTree = "<group>"; };
 		4A87624D184953D7007CE977 /* zombie_splash@640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie_splash@640x1136.png"; sourceTree = "<group>"; };
 		4A87624F1849546E007CE977 /* zombie_splash@640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zombie_splash@640x960.png"; sourceTree = "<group>"; };
 		4A876251184954E5007CE977 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4A87625318495552007CE977 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
-		4A876255184955D1007CE977 /* Default@320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@320x480.png"; sourceTree = "<group>"; };
 		4A8B49681845159C00E152CD /* tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tank.png; sourceTree = "<group>"; };
 		4ACF0EFD18413302002FC79C /* zombieWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zombieWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACF0F0018413302002FC79C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -192,10 +196,6 @@
 		4ACF0F0E18413302002FC79C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4ACF0F1018413302002FC79C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4ACF0F1218413302002FC79C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		4ACF0F1618413302002FC79C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
-		4ACF0F1818413302002FC79C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
-		4ACF0F1A18413302002FC79C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
-		4ACF0F1C18413302002FC79C /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Resources/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		4ACF0F1E18413302002FC79C /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Resources/Icon-72.png"; sourceTree = "<group>"; };
 		4ACF0F2018413302002FC79C /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Resources/Icon-Small-50.png"; sourceTree = "<group>"; };
 		4ACF0F2218413302002FC79C /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Resources/Icon-Small.png"; sourceTree = "<group>"; };
@@ -562,6 +562,11 @@
 		4ACF0F1518413302002FC79C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A319E2B184A7C60006D80D4 /* Icon-80.png */,
+				4A319E2C184A7C60006D80D4 /* Icon-120.png */,
+				4A319E27184A6A14006D80D4 /* zombie_splash_screen.png */,
+				4A319E28184A6A14006D80D4 /* zombie_splash.png */,
+				4A319E25184A69C3006D80D4 /* Default@2x.png */,
 				4A1943241843CA9900850D97 /* character.png */,
 				4AD5F8971841348500EAD965 /* player2-hd.png */,
 				4AD5F8981841348500EAD965 /* player2.png */,
@@ -575,10 +580,6 @@
 				4AD5F8A01841348500EAD965 /* projectile-hd.png */,
 				4AD5F8A11841348500EAD965 /* projectile.png */,
 				4AD5F8A71841348500EAD965 /* zombie_pixel.png */,
-				4ACF0F1618413302002FC79C /* Default.png */,
-				4ACF0F1818413302002FC79C /* Default@2x.png */,
-				4ACF0F1A18413302002FC79C /* Default-568h@2x.png */,
-				4ACF0F1C18413302002FC79C /* Default-Landscape~ipad.png */,
 				4ACF0F1E18413302002FC79C /* Icon-72.png */,
 				4ACF0F2018413302002FC79C /* Icon-Small-50.png */,
 				4ACF0F2218413302002FC79C /* Icon-Small.png */,
@@ -586,7 +587,6 @@
 				4ACF0F2618413302002FC79C /* Icon.png */,
 				4ACF0F2818413302002FC79C /* Icon@2x.png */,
 				4A1943221843CA4400850D97 /* background.png */,
-				4A876255184955D1007CE977 /* Default@320x480.png */,
 				4A876251184954E5007CE977 /* Default.png */,
 				4A87625318495552007CE977 /* Default~iphone.png */,
 				4A87624F1849546E007CE977 /* zombie_splash@640x960.png */,
@@ -1016,7 +1016,6 @@
 			files = (
 				4ACF0F2718413302002FC79C /* Icon.png in Resources */,
 				4ACF108518413303002FC79C /* ChangeLog in Resources */,
-				4ACF0F1918413302002FC79C /* Default@2x.png in Resources */,
 				4ACF0F2318413302002FC79C /* Icon-Small.png in Resources */,
 				4AD5F8B21841348600EAD965 /* projectile-hd.png in Resources */,
 				4A0C9FC0184173880028A16C /* levelinfo.plist in Resources */,
@@ -1028,9 +1027,8 @@
 				4A0C9FBC18415BD20028A16C /* Bomb_Exploding.wav in Resources */,
 				4A8B49691845159C00E152CD /* tank.png in Resources */,
 				4A8762501849546E007CE977 /* zombie_splash@640x960.png in Resources */,
-				4ACF0F1718413302002FC79C /* Default.png in Resources */,
-				4A876256184955D1007CE977 /* Default@320x480.png in Resources */,
 				4A876252184954E5007CE977 /* Default.png in Resources */,
+				4A319E2D184A7C60006D80D4 /* Icon-80.png in Resources */,
 				4AD5F8AF1841348600EAD965 /* monster.png in Resources */,
 				4A87625418495552007CE977 /* Default~iphone.png in Resources */,
 				4AD5F8AB1841348600EAD965 /* projectile2-hd.png in Resources */,
@@ -1044,11 +1042,13 @@
 				4AD5F8AE1841348600EAD965 /* monster-hd.png in Resources */,
 				4AD5F8B11841348600EAD965 /* player.png in Resources */,
 				4ACF0F2518413302002FC79C /* Icon-Small@2x.png in Resources */,
+				4A319E2E184A7C60006D80D4 /* Icon-120.png in Resources */,
+				4A319E26184A69C3006D80D4 /* Default@2x.png in Resources */,
+				4A319E29184A6A14006D80D4 /* zombie_splash_screen.png in Resources */,
 				4AD5F8B91841348600EAD965 /* zombie_pixel.png in Resources */,
-				4ACF0F1D18413302002FC79C /* Default-Landscape~ipad.png in Resources */,
-				4ACF0F1B18413302002FC79C /* Default-568h@2x.png in Resources */,
 				4AD5F8B01841348600EAD965 /* player-hd.png in Resources */,
 				4ACF0F2918413302002FC79C /* Icon@2x.png in Resources */,
+				4A319E2A184A6A14006D80D4 /* zombie_splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1224,6 +1224,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1231,12 +1232,14 @@
 				GCC_PREFIX_HEADER = zombieWar/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"zombieWar/libs/kazmath/include\"";
 				INFOPLIST_FILE = zombieWar/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1245,12 +1248,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = zombieWar/Prefix.pch;
 				HEADER_SEARCH_PATHS = "\"zombieWar/libs/kazmath/include\"";
 				INFOPLIST_FILE = zombieWar/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = (
 					"-lz",
 					"-lsqlite3",
@@ -1258,6 +1263,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
